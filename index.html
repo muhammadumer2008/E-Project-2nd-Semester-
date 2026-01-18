@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+
+        <!-- Logo -->
+        <header class="logo-container">
+
+            <div class="logo">
+                <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+
+            <h1>LawConnect</h1>
+
+        </header>
+
+
+        <!-- Role Selection Page -->
+        <section class="role-selection form-card">
+
+            <h2>Join LawConnect</h2>
+            <p class="subtitle">Choose how you want to use our Platform</p>
+
+            <div class="role-grid">
+
+                <div class="role-option" onclick="showPage('client-reg')">
+                
+                    <div class="icon-box blue">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                
+                    <h3>I need a Lawyer</h3>
+                    <p>Search for legal professionals,compare profiles, and book appointments easily.</p>
+                
+                    <span class="link">Register as Client &rarr;</span>
+            
+                </div>
+
+                <div class="role-option" onclick="showPage('lawyer-reg')">
+               
+                    <div class="icon-box gray">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+               
+                    <h3>I am a Lawyer</h3>
+                    <p>Join our network of trusted legal professional and grow your practice.</p>
+               
+                    <span class="link">Register as Lawyer &rarr;</span>
+            
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+                <p>Already have an account? <a href="#" onclick="showPage('sign-in')">Sign-In</a></p>
+            </div>
+        
+        </section>
+
+        
+        <!-- Lawyer Registration Page -->
+        <section class="lawyer-reg form-card lawyer-wide hidden">
+            
+            <h2>Register as a Lawyer</h2>
+            <p class="subtitle">Join our network of trusted legal professionals</p>
+
+            <form action="" class="form-grid">
+                
+                <div class="input-group">
+                    <Label>Full Name</Label>
+                    <div class="input-wrapper"><i class="fa-solid fa-user"></i><input type="text" placeholder="John Doe" required></div>
+                </div>
+                
+                <div class="input-group">
+                    <Label>Years of Experience</Label>
+                    <div class="input-wrapper"><i class="fa-solid fa-briefcase"></i><input type="number" placeholder="10" required></div>
+                </div>
+                
+                <div class="input-group">
+                    <Label>Email Address</Label>
+                    <div class="input-wrapper"><i class="fa-solid fa-envelope"></i><input type="email" placeholder="you@example.com" required></div>
+                </div>
+                
+                <div class="input-group">
+                    <Label>License Number</Label>
+                    <div class="input-wrapper"><i class="fa-solid fa-note"></i><input type="text" placeholder="BAR-123456" required></div>
+                </div>
+                
+                <div class="input-group">
+                    <Label>Phone Number</Label>
+                    <div class="input-wrapper"><i class="fa-solid fa-phone"></i><input type="number" placeholder="+1 (555) 000-0000" required></div>
+                </div>
+                
+                <div class="input-group">
+                    <Label>Password</Label>
+                    <div class="input-wrapper"><i class="fa-solid fa-lock"></i><input type="password" placeholder="••••••••" required></div>
+                </div>
+                
+                <div class="input-group">
+                    <label>Location</label>
+                    <div class="input-wrapper"><i class="fa-solid fa-location"></i>
+                    <select>
+                        <option>Select Location</option>
+                        <option>Pakistan</option>
+                        <option>India</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                        <option>United Arab Emirates</option>
+                    </select>
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <Label>Confirm Password</Label>
+                    <div class="input-wrapper"><i class="fa-solid fa-lock"></i><input type="password" placeholder="••••••••" required></div>
+                </div>
+                
+                <div class="full-width">
+
+                    <label>Legal Services (Select all that apply)</label>
+
+                    <div class="checkbox-grid">
+                    
+                        <Label><input type="checkbox" class="cb-item">Criminal Law</Label>
+                        <Label><input type="checkbox" class="cb-item">Divorce & Family</Label>
+                        <Label><input type="checkbox" class="cb-item">Civil Litigation</Label>
+                        <Label><input type="checkbox" class="cb-item">Affidavit Services</Label>
+                        <Label><input type="checkbox" class="cb-item">Corporate Law</Label>
+                        <Label><input type="checkbox" class="cb-item">Property Law</Label>
+                        <Label><input type="checkbox" class="cb-item">Immigration Law</Label>
+                        <Label><input type="checkbox" class="cb-item">Bankruptcy</Label>
+                    
+                    </div>
+                
+                </div>
+
+                <button class="btn-primary full-width" type="submit">Submit for Approval</button>
+            
+            </form>
+            
+            <div class="footer-links">
+                <p>Already have an account? <a href="#" onclick="showPage('sign-in')">Sign-In</a></p>
+                <p>Looking for Legal Help? <a href="#" onclick="showPage('client-reg')">Register as Client</a></p>
+            </div>
+        
+        </section>
+
+        
+        <!-- Client Registration Page -->
+        <section class="client-reg form-card hidden">
+            
+            <h2>Create Your Account</h2>
+            <p class="subtitle">Register as a client for leagl help</p>
+
+            <form action="">
+                
+                <div class="input-group">
+                   <label>Full Name</label>
+                   <div class="input-wrapper"><i class="fa-solid fa-user"></i><input type="text" placeholder="John Doe" required></div>
+                </div>
+                
+                <div class="input-group">
+                   <label>Email Address</label>
+                   <div class="input-wrapper"><i class="fa-solid fa-envelope"></i><input type="email" placeholder="you@example.com" required></div>
+                </div>
+                
+                <div class="input-group">
+                   <label>Phone Number</label>
+                   <div class="input-wrapper"><i class="fa-solid fa-phone"></i><input type="number" placeholder="+1 (555) 000-0000" required></div>
+                </div>
+                
+                <div class="input-group">
+                   <label>Password</label>
+                   <div class="input-wrapper"><i class="fa-solid fa-lock"></i><input type="password" placeholder="••••••••" required></div>
+                </div>
+                
+                <div class="input-group">
+                   <label>Confirm Password</label>
+                   <div class="input-wrapper"><i class="fa-solid fa-lock"></i><input type="password" placeholder="••••••••" required></div>
+                </div>
+
+                <button class="btn-primary" type="submit">Create Account</button>
+            
+            </form>
+
+            <div class="footer-links">
+                <p>Already have an account? <a href="#" onclick="showPage('sign-in')">Sign-In</a></p>
+                <p>Are you a Lawyer? <a href="#" onclick="showPage('lawyer-reg')">Register here</a></p>
+            </div>
+        
+        </section>
+        
+        
+        <!-- Login Page -->
+        <section class="sign-in form-card hidden">
+            
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Sign-in to your account to continue</p>
+            
+            <form action="">
+
+                <div>
+                   <label>Email Address</label>
+                   <div><i class="fa-solid fa-envelope"></i><input type="email" placeholder="you@example.com" required></div>
+                </div>
+                
+                <div>
+                   <label>Password</label>
+                   <div><i class="fa-solid fa-lock"></i><input type="password" placeholder="••••••••" required></div>
+                </div>
+
+                <label><input type="checkbox">Remeber me</label>
+                <a href="#">Forgot Password?</a>
+
+                <button class="btn-primary" type="submit">Sign In</button>
+            
+            </form>
+
+            <div class="footer-links">
+                <p>Don't have an account?</p>
+                <div class="btn-group">
+                    <button class="btn-outline" onclick="showPage('client-reg')">Register as Client</button>
+                    <button class="btn-outline" onclick="showPage('lawyer-reg')">Register as Lawyer</button>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="#" onclick="showPage('role')">&larr; Back to Home</a>
+        </footer>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
